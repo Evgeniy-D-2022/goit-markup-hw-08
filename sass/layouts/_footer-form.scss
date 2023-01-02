@@ -4,6 +4,7 @@
 
 .footer-form__container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-form__text {
@@ -23,7 +24,8 @@
     border-radius: 4px;
     background-color: var(--background-footer-color);
     outline: none;
-    width: 358px;
+    // width: 358px;
+    width: 100%;
     padding: 15px 16px;
     margin-right: 12px;
     color: var(--primary-white-color);

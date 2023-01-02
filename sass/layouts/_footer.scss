@@ -4,12 +4,15 @@
 }
 
 .footer-wrap {
-    display: flex;
-    align-items: baseline;
+    // align-items: baseline;
+    justify-content: center;
+    text-align: center;
+   
 }
 
 .footer-address__wrap {
-    display: inline-block;
+    // display: inline-block;
+    margin-bottom: 60px;
 }
 
 .logo--light {
