@@ -1,10 +1,13 @@
 .footer-form {
+    @media screen and (min-width:1200px) {
     margin-left: auto;
+    }
 }
 
 .footer-form__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-form__text {
@@ -24,16 +27,20 @@
     border-radius: 4px;
     background-color: var(--background-footer-color);
     outline: none;
-    // width: 358px;
     width: 100%;
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     color: var(--primary-white-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
         border-color: var(--accent-color);
         }
+            @media screen and (min-width:1200px) {
+            width: 358px;
+            margin-right: 12px;
+            margin-bottom: 0;
+            }
 }
 
 .footer-form__btn {
