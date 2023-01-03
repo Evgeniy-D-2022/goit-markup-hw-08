@@ -121,6 +121,8 @@ a {
 header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header {
@@ -157,7 +159,6 @@ header .container {
 .logo--dark {
   color: var(--logo-color);
   padding: 26px 0;
-  margin-right: 87px;
 }
 @media screen and (min-width: 1200px) {
   .logo--dark {
@@ -202,9 +203,8 @@ header .container {
 
 .contacts__list {
   display: flex;
-  margin-left: 96px;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
 }
 @media screen and (max-width: 767px) {
   .contacts__list {
