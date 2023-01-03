@@ -7,6 +7,12 @@ header .container {
     border-bottom: 1px solid var(--border-color);
 }
 
+.navigation {
+    @media screen and (max-width:767px) {
+    display: none;
+    }
+}
+
 .navigation__list {
     display: flex;
 }
@@ -28,11 +34,10 @@ header .container {
 
 .logo--dark {
     color: var(--logo-color);
-    margin-right: 93px;
+    // margin-right: 93px;
+    padding: 16px 0;
 }
-
-   
-
+  
 .logo-web {
     color: var(--accent-color);
 }
@@ -69,6 +74,9 @@ header .container {
 }
 
 .contacts__list {
+    @media screen and (max-width:767px) {
+    display: none;
+    }
     display: flex;
     margin-left: auto;
     align-items: center;
@@ -102,4 +110,104 @@ header .container {
 
 .contacts__item:not(:last-child) {
     margin-right: 50px;
+}
+
+.menu-open {
+    @media screen and (min-width:768px) {
+    display: none;
+    }
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    background-color: var(--background-body-color);
+    border: none;
+}
+
+.mob-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 48px 40px;
+    background-color: var(--background-body-color);
+        @media screen and (min-width:768px) {
+        display: none;
+        }
+
+}
+
+.mob-navigation__item {
+    margin-bottom: 32px;
+}
+
+.mob-navigation__link {
+    font-size: 40px;
+    line-height: 1.18;
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
+        }
+}
+
+.mob-contacts__list {
+    margin-top: 302px;
+}
+
+.mob-contacts__item {
+    margin-bottom: 32px;
+}
+
+.mob-contacts__tel {
+    font-size: 34px;
+    line-height: 1.18;
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
+        }
+}
+
+.mob-contacts__mail {
+    font-size: 24px;
+    line-height: 1.18;
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
+        }
+}
+
+.mob-soc__list {
+    display: flex;
+    margin-top: 64px;
+}
+
+.mob-soc__item {
+    margin-right: 20px;
+    
+}
+
+.mob-soc__link {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.menu-close {
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    background-color: var(--background-body-color);
+    border: none;
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
+        }
 }

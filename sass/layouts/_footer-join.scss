@@ -1,7 +1,8 @@
 .join {
     margin-bottom: 60px;
-    // display: inline-block;
-    // margin-left: 70px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+        }
 }
 
 .join__text {

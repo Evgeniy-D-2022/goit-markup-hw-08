@@ -17,7 +17,7 @@
 <body>
 
     <!--header-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <a class="logo logo--dark" href="./"><span class="logo-web">Web</span>Studio</a>
             <nav class="navigation">
@@ -41,17 +41,52 @@
                 </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="menu-open" menu-open>
+                <svg width="24" height="16" class="menu-open__icon">
+                    <use href="./img/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu" mob-menu>
+            <nav class="mob-navigation">
+                <ul class="mob-navigation__list">
+                    <li class="mob-navigation__item"><a class="mob-navigation__link" href="./index.html">Студія</a> </li>
+                    <li class="mob-navigation__item"><a class="mob-navigation__link" href="./portfolio.html">Портфоліо</a> </li>
+                    <li class="mob-navigation__item"><a class="mob-navigation__link" href="./">Контакти</a> </li>
+                </ul>
+            </nav>
+            <ul class="mob-contacts__list">
+                <li class="mob-contacts__item">
+                    <a class="mob-contacts__tel" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+                </li>
+                <li class="mob-contacts__item">
+                    <a class="mob-contacts__mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mob-soc__list">
+                <li class="mob-soc__item"><a class="mob-soc__link" href="/index.html">Instagram</a></li>
+                <li class="mob-soc__item"><a class="mob-soc__link" href="/index.html">Twitter</a></li>
+                <li class="mob-soc__item"><a class="mob-soc__link" href="/index.html">Facebook</a></li>
+                <li class="mob-soc__item"><a class="mob-soc__link" href="/index.html">LinkedIn</a></li>
+            </ul>
+            <button type="button" class="menu-close" menu-close>
+                <svg width="19" height="19" class="menu-close__icon">
+                    <use href="./img/icons.svg#icon-close_24px"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
     <main>
 
     <!--hero-->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
             <h1 class="hero__title">Ефективні рішення для<br>вашого бізнесу</h1>
 <button class="hero__btn btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section> -->
+        </section>
 
     <!--benefits-->
         <section class="benefits">
@@ -414,5 +449,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
