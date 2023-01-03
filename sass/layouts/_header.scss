@@ -124,9 +124,12 @@ header .container {
 }
 
 .mob-menu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     width: 100vw;
     height: 100vh;
+    justify-content: space-between;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -149,10 +152,6 @@ header .container {
         &:focus {
         color: var(--accent-color);
         }
-}
-
-.mob-contacts__list {
-    margin-top: 302px;
 }
 
 .mob-contacts__item {
@@ -180,13 +179,16 @@ header .container {
 .mob-soc__list {
     display: flex;
     margin-top: 64px;
+    flex-wrap: wrap;
 }
 
 .mob-soc__item {
-    margin-right: 20px;
-    
+    margin-right: 10px;
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, .2);
+        padding-right: 10px;    
 }
-
+}
 .mob-soc__link {
     font-size: 18px;
     line-height: 1.22;
