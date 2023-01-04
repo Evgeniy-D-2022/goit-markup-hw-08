@@ -20,6 +20,8 @@ button {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -582,8 +584,6 @@ header .container {
 
 .card-list__img {
   margin-bottom: 30px;
-  width: 100%;
-  height: auto;
 }
 
 .card-list__name {
